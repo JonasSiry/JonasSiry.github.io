@@ -1,0 +1,933 @@
+@font-face
+{
+  font-family:'Raleway';
+  src:url('Raleway/Raleway-Medium.ttf');
+  font-weight:normal;
+  font-style:normal;
+}
+
+a
+{
+  text-decoration:none;
+  color:black;
+}
+
+body
+{
+  font-family:'Raleway', Arial, sans-serif;
+  letter-spacing:1px;
+}
+
+.bloc_page
+{
+  margin-left:3%;
+  margin-right:3%;  
+}
+
+header
+{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:1.5em;
+  margin-top:1em;
+} 
+
+.nav
+{
+  display:flex;
+  font-size:0.8em;
+}
+
+.topnav
+{
+  padding-left:1.5em;
+  padding-right:1.5em;
+  padding-top:2em;
+}
+
+.topnav a
+{
+  margin-left:2em;
+  text-decoration:none;
+  padding-top:2em;
+  border-top:1px solid white;
+  padding-left:1.5em;
+  padding-right:1.5em;
+}
+
+.logo img
+{
+  height:4em;
+}
+
+.hebergeheader:hover
+{
+  color:#0065FC;
+  border-color:#0065FC;
+}
+
+.activitesheader:hover
+{
+  color:#0065FC;
+  border-color:#0065FC;
+}
+
+.inscription
+{
+  font-weight:bold;
+  margin-left:2em;
+  padding-top:2em;
+}
+
+.inscrire
+{
+  color:#0065FC
+}
+
+.navcache
+{
+  display:none;
+}
+
+h1
+{
+  font-size:1em;
+  font-weight:bold;
+  color:black;
+}
+
+p
+{
+  font-size:0.8em;
+  color:black;
+}
+
+.titre
+{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:0.5em;
+}
+
+.titre p
+{
+  margin-top:-0.1em;
+}
+
+form.search
+{
+  display:flex;
+  margin-bottom:1em;
+}
+
+.mapmarker
+{
+  width:1em;
+  text-align:center;
+  padding:0.6em;
+  background:#F2F2F2;
+  border-radius:10px 0 0 10px;
+}
+
+.text
+{
+  border:1px solid #F2F2F2;
+  font-weight:bold;
+  text-indent:10px;
+  padding-right:10px;
+}
+
+span.icon
+{
+  display:none;
+}
+
+span.txt
+{
+  display:inline-block;
+}
+
+.searchbutton
+{
+  font-weight:bold;
+  cursor:pointer;
+  border:none;
+  width:auto;
+  color:white;
+  background:#0065FC;
+  border-radius:0 10px 10px 0;
+  padding-left:1em;
+  padding-right:1em;
+}
+
+.filtres
+{
+  display:flex;
+  flex-wrap:wrap;
+  margin-bottom:1em;
+}
+
+.allfiltres
+{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.filtres h2
+{
+  font-size:0.9em;
+  font-weight:bold;
+  color:black;
+  margin-right:1em;
+}
+
+.filtres p
+{
+  padding-right:15px;
+  font-size:0.8em;
+  font-weight:bold;
+  color:black;
+}
+
+.filtres i
+{
+  background-color:#DEEBFF;
+  font-size:1em;
+  color:#0065FC;
+  border-radius:50%;
+  margin-right:0.5em;
+  width:2.5em;
+  height:2.5em;
+  line-height:2.5em;
+  text-align:center;
+  transform:scale(1.1);
+}
+
+.filtresip
+{
+  display:flex;
+  border-top:3px solid #F2F2F2;
+  border-bottom:3px solid #F2F2F2;
+  border-right:3px solid #F2F2F2;
+  border-radius:30px;
+  margin-right:1em;
+  cursor:pointer;
+  max-height:2.5em;
+  margin-bottom:0.5em;
+}
+
+.filtresip:hover
+{
+  background-color:#DEEBFF;
+  border-color:white;
+}
+
+.filtresip:hover i
+{
+  transform:scale(1.3);
+}
+
+.info
+{
+  margin-bottom:1em;
+}
+
+.info i
+{
+  color:#0065FC;
+  text-align:center;
+  width:0.8em;
+  height:0.8em;
+  border:2px solid #F2F2F2;
+  border-radius:50%;
+  padding:0.2em;
+  margin-right:10px;
+}
+
+.milieu
+{
+  display:flex;
+  justify-content:space-between;
+}
+
+.milieu article
+{
+  width:60%;
+  border:1px solid #F2F2F2;
+  background-color:#F2F2F2;
+  border-radius:10px;
+  padding-right:2em;
+  padding-left:2em;
+  margin-bottom:2em;
+  margin-right:1em;
+}
+
+.milieu article h2
+{
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+.hpic
+{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+
+.stars
+{
+  font-size:0.7em;
+  padding-left:0.6em;
+  display:flex;
+  margin-bottom:0.5em;
+}
+
+.bluestar
+{
+  color:#0065FC
+}
+
+.greystar
+{
+  color:#F2F2F2;
+}
+
+.milieu h2
+{
+  font-size:1em;
+  font-weight:bold;
+  color:black;
+}
+
+.afficher
+{
+  margin-bottom:2em;
+}
+
+.afficher a
+{
+  font-size:0.8em;
+  font-weight:bold;
+  color:black;
+}
+
+.heberge
+{
+  width:28%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  border:3px solid white;
+  background-color:white;
+  border-radius:10px;
+  margin-bottom:2em;
+  overflow:hidden;
+}
+
+.heberge h3
+{
+  padding-left:0.8em;
+  font-size:0.8em;
+  font-weight:bold;
+  color:black;
+}
+
+.heberge p
+{
+  padding-left:0.8em;
+  font-size:0.7em;
+  color:black;
+}
+
+.hone
+{
+  height:9em;
+  width:100%;
+  background-image:url(Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+  border-radius:10px;
+  background-size:cover;
+  background-position:25% 40%;
+}
+
+.htwo
+{
+  height:9em;
+  width:100%;
+  background-image:url(Projet2-Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+  border-radius:10px;
+  background-size:cover;
+  background-position:25% 50%;
+}
+
+.hthree
+{
+  height:9em;
+  width:100%;
+  background-image:url(Projet2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+  border-radius:10px;
+  background-size:cover;
+  background-position:25% 50%;
+}
+
+.hfour
+{
+  height:9em;
+  width:100%;
+  background-image:url(Projet2-Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+  border-radius:10px;
+  background-size:cover;
+  background-position:30% 60%;
+}
+
+.hfive
+{
+  height:9em;
+  width:100%;
+  background-image:url(Projet2-Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+  border-radius:10px;
+  background-size:cover;
+}
+
+.hsix
+{
+  height:9em;
+  width:100%;
+  background-image:url(Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+  border-radius:10px;
+  background-size:cover;
+  background-position:0% 60%;
+}
+
+aside
+{
+  width:30%;
+  border:1px solid #F2F2F2;
+  background-color:#F2F2F2;
+  border-radius:10px;
+  padding-right:2em;
+  padding-left:2em;
+  margin-bottom:2em;
+}
+
+.titrep
+{
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+.titrep i
+{
+  font-size:1.3em;
+}
+
+.hebergep a
+{
+  display:flex;
+}
+
+.hebergep
+{
+  width:85%;
+  border:3px solid white;
+  background-color:white;
+  border-radius:10px;
+  margin-bottom:2em;
+  overflow:hidden;
+}
+
+.hebergepc
+{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding-left:0.5em;
+  width:50%;
+}
+
+.hebergep h3
+{
+  padding-left:0.8em;
+  font-size:0.8em;
+  font-weight:bold;
+  color:black;
+}
+
+.hebergep p
+{
+  padding-left:0.8em;
+  font-size:0.7em;
+  color:black;
+  margin-top:-2%;
+}
+
+.containerp
+{
+  display:flex;
+  flex-direction:column;
+}
+
+.hpone
+{
+  height:9em;
+  width:50%;
+  background-image:url(Projet2-Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+  border-radius:10px;
+  background-size:cover;
+  background-position:0% 50%;
+}
+
+.hptwo
+{
+  height:9em;
+  width:50%;
+  background-image:url(Projet2-Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+  border-radius:10px;
+  background-size:cover;
+  background-position:0% 50%;
+}
+
+.hpthree
+{
+  height:9em;
+  width:50%;
+  background-image:url(Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+  border-radius:10px;
+  background-size:cover;
+  background-position:0% 60%;
+}
+
+#activites
+{
+  margin-top:1em;
+  margin-bottom:2em;
+  font-size:1em;
+  font-weight:bold;
+  color:black;
+}
+
+.activites
+{
+  display:flex;
+  flex-flow:column wrap;
+  align-content:space-between;
+  max-height:30em;
+  margin-top:1em;
+}
+
+.activites h3
+{
+  font-size:0.8em;
+  font-weight:bold;
+  color:black;
+  padding-left:1em;
+}
+
+.masonry
+{
+  height:30em;
+  width:23%;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.25);
+  overflow:hidden;
+}
+
+.masonry:nth-child(2)
+{
+  height:18em;
+  margin-bottom:2em;
+}
+
+.masonry:nth-child(3)
+{
+  height:10em;
+}
+
+.masonry:nth-child(5)
+{
+  height:10em;
+  margin-bottom:2em;
+}
+
+.masonry:nth-child(6)
+{
+  height:18em;
+}
+
+.activitesone
+{
+  height:27em;
+  background-image:url(Projet2-Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  border-radius:10px;
+  background-size:cover;
+  background-position:10% 50%;
+}
+
+.activitestwo
+{
+  height:15em;
+  background-image:url(Projet2-Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  border-radius:10px;
+  background-size:cover;
+  background-position:10% 50%;
+}
+
+.activitesthree
+{
+  height:7em;
+  background-image:url(Projet2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+  border-radius:10px;
+  background-size:cover;
+  background-position:10% 50%;
+}
+
+.activitesfour
+{
+  height:27em;
+  background-image:url(Projet2-Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  border-radius:10px;
+  background-size:cover;
+  background-position:10% 50%;
+}
+
+.activitesfive
+{
+  height:7em;
+  background-image:url(Projet2-Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  border-radius:10px;
+  background-size:cover;
+  background-position:10% 20%;
+}
+
+.activitessix
+{
+  height:15em;
+  background-image:url(Projet2-Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  border-radius:10px;
+  background-size:cover;
+  background-position:10% 50%;
+}
+
+footer
+{
+  display:flex;
+  border:1px solid #F2F2F2;
+  background-color:#F2F2F2;
+  padding-left:5%;
+  padding-top:0.5%;
+  padding-bottom:1.5%;
+  margin-bottom:1em;
+  margin-top:3em;
+}
+
+footer h2
+{
+  font-size:0.9em;
+  font-weight:bold;
+  color:black;
+}
+
+footer ul
+{
+  list-style-type:none;
+  padding-left:0;
+}
+
+footer a
+{
+  text-decoration:none;
+  color:black;
+  font-size:0.8em;
+}
+
+footer a:hover
+{
+  color:#0065FC;
+}
+
+.a_propos
+{
+  width:30%;
+}
+
+.nos_hebergements
+{
+  width:30%;
+}
+
+@media all and (max-width:992px)
+{
+
+  .filtres
+  {
+    flex-flow:wrap column;
+  }
+
+  .milieu
+  {
+    display:flex;
+    flex-flow:wrap column-reverse;
+  }
+
+  .milieu article
+  {
+    display:flex;
+    flex-direction:column;
+    width:auto;
+    margin-right:0;
+    border:0;
+    background:none;
+    margin-bottom:0;
+  }
+
+  .hpic
+  {
+    display:flex;
+    flex-flow:wrap column;
+  }
+
+  .heberge
+  {
+    width:auto;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .milieu aside
+  {
+    width:auto;
+    margin-bottom:0;
+  }
+
+  .activites
+  {
+    width:auto;
+    max-height:none;
+  }
+
+  .articleac
+  {
+    padding-right:2em;
+    padding-left:2em;
+  }
+
+  .masonry
+  {
+    width:100%;
+    height:12em;
+  }
+
+  .masonry:nth-child(1)
+  {
+    margin-bottom:2em;
+  }
+
+  .masonry:nth-child(2)
+  {
+    height:12em;
+  }
+
+  .masonry:nth-child(3)
+  {
+    height:12em;
+    margin-bottom:2em;
+  }
+
+  .masonry:nth-child(4)
+  {
+    margin-bottom:2em;
+  }
+
+  .masonry:nth-child(5)
+  {
+    height:12em;
+  }
+
+  .masonry:nth-child(6)
+  {
+    height:12em;
+  }
+
+  .activitesone
+  {
+    height:9em;
+  }
+
+  .activitestwo
+  {
+    height:9em;
+  }
+
+  .activitesthree
+  {
+    height:9em;
+  }
+
+  .activitesfour
+  {
+    height:9em;
+  }
+
+  .activitesfive
+  {
+    height:9em;
+  }
+
+  .activitessix
+  {
+    height:9em;
+  }
+
+  .a_propos
+  {
+    margin-right:1em;
+    width:33.33%;
+  }
+
+  .nos_hebergements
+  {
+    margin-right:1em;
+    width:33.33%;
+  }
+}
+
+@media all and (max-width:680px)
+{
+
+  .bloc_page
+  {
+    margin-left:0;
+    margin-right:0;
+  }
+
+  span.icon
+  {
+    display:inline-block;
+    color:white;
+    text-align:center;
+    width:1em;
+  }
+
+  span.txt
+  {
+    display:none;
+  }
+
+  .topnav
+  {
+    display:none;
+  }
+
+  .navcache
+  {
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:1.5em;
+  }
+
+  .navcache p
+  {
+    text-align:center;
+    font-size:0.8em;
+  }
+
+  .hebergeheadertwo
+  {
+    width:50%;
+    border-bottom:3px solid #f2f2f2;
+    padding-bottom:0.5em;
+  }
+
+  .activitesheadertwo
+  {
+    width:50%;
+    border-bottom:3px solid #f2f2f2;
+    padding-bottom:0.5em;
+  }
+
+  .hebergeheadertwo:hover
+  {
+    color:#0065FC;
+    border-bottom:3px solid currentColor;
+  }
+
+  .activitesheadertwo:hover
+  {
+    color:#0065FC;
+    border-bottom:3px solid currentColor;
+  }
+  
+  .hebergeheadertwo:hover > p
+  {
+    color:#0065FC;
+  }
+
+  .activitesheadertwo:hover > p
+  {
+    color:#0065FC;
+  }
+
+  .text
+  {
+    border-right:none;
+    padding-right:20px;
+  }
+
+  .text:focus
+  {
+    outline:none;
+  }
+
+  .searchbutton
+  {
+    border-radius:10px;
+    margin-left:-10px;
+  }
+
+  .milieu article
+  {
+    padding-right:1em;
+    padding-left:1em;
+  }
+
+  .articleac
+  {
+    padding-right:1em;
+    padding-left:1em;
+  }
+
+  footer
+  {
+    padding-top:0.7em;
+    width:auto;
+    flex-direction:column;
+  }
+
+  footer h2
+  {
+    margin-bottom:-0.4em;
+  }
+
+  .a_propos
+  {
+    display:flex;
+    flex-direction:column;
+    width:auto;
+  }
+
+  .nos_hebergements
+  {
+    display:flex;
+    flex-direction:column;
+    width:auto;
+  }
+
+  .assistance
+  {
+    display:flex;
+    flex-direction:column;
+    width:auto;
+  }
+}
