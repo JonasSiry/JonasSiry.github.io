@@ -179,6 +179,8 @@ span.txt
   font-weight:bold;
   color:black;
   margin-right:1em;
+  position:relative;
+  bottom:0.1em;
 }
 
 .filtres p
@@ -187,6 +189,8 @@ span.txt
   font-size:0.8em;
   font-weight:bold;
   color:black;
+  position:relative;
+  bottom:0.2em;
 }
 
 .filtres i
@@ -196,9 +200,9 @@ span.txt
   color:#0065FC;
   border-radius:50%;
   margin-right:0.5em;
-  width:2.5em;
-  height:2.5em;
-  line-height:2.5em;
+  width:2.2em;
+  height:2.2em;
+  line-height:2.2em;
   text-align:center;
   transform:scale(1.1);
 }
@@ -212,7 +216,7 @@ span.txt
   border-radius:30px;
   margin-right:1em;
   cursor:pointer;
-  max-height:2.5em;
+  max-height:2.2em;
   margin-bottom:0.5em;
 }
 
